@@ -1,4 +1,4 @@
-import React from 'react'
+import { Button } from 'react-bootstrap';
 import { TProduct } from '../interface/TProduct'
 import { Link } from 'react-router-dom';
 
@@ -27,7 +27,7 @@ const Shop = ({products, onDel}: Props) => {
               <td>{item.title}</td>
               <td>{item.price}</td>
               <td>{item.description}</td>
-              <td><button className="btn btn-outline-danger" onClick={() => onDel(Number(item.id))}>Delete</button>
+              <td><Button variant='outline-danger' onClick={() => onDel(Number(item.id))}>Delete</Button>
               <Link to={`/Edit/${item.id}`} className='btn btn-outline-danger'>Update</Link>
               </td>
             </tr>

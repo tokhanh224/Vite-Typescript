@@ -1,8 +1,6 @@
 import { Link } from 'react-router-dom'
 
-type Props = {}
-
-const Header = (props: Props) => {
+const Header = () => {
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
   <div className="container-fluid">

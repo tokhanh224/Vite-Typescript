@@ -9,6 +9,7 @@ import Header from './components/Header'
 import Register from './pages/Register'
 import Login from './pages/Login'
 import Shop from './pages/Shop'
+import 'bootstrap/dist/css/bootstrap-grid.min.css'
 function App() {
   const navigate = useNavigate()
   const [products, setProducts] = useState<TProduct[]>([]);
